@@ -13,9 +13,6 @@ label = Label(center_frame,text='Currency-Converter',bg='sky blue',font=('TkDefa
 label.pack(pady=10)
 label.pack_propagate(False)
 
-def option_validate():
-    print('hello')
-
 from_frame = Frame(center_frame,border=10,bg='light grey',height=45,width=350)
 from_frame.pack(expand=False,pady=10)
 from_frame.pack_propagate(False)
@@ -27,6 +24,7 @@ from_label.place(x=-5)
 from_box = ttk.Combobox(from_frame,values=['INR','DOLLAR','POUND'])
 from_box.pack(expand=True)
 from_box.pack_propagate(False)
+from_box.place(x=190)
 
 to_frame = Frame(center_frame,border=10,bg='light grey',height=45,width=350)
 to_frame.pack(expand=False,pady=20)
@@ -39,10 +37,14 @@ to_label.place(x=-5)
 to_box = ttk.Combobox(to_frame,values=['INR','DOLLAR','POUND'])
 to_box.pack(expand=True)
 to_box.pack_propagate(False)
+to_box.place(x=190)
+
+text_box = Entry(center_frame,bg='yellow',border=5,relief=RIDGE,font=('TkDefaultFont', 12))
+text_box.pack(expand=True)
+text_box.pack_propagate(False)
 
 convert_button = Button(center_frame,text='CONVERT',bg='red',width=10,height=1)
 convert_button.pack(expand=True)
 convert_button.pack_propagate(False)
-
 
 win.mainloop()
