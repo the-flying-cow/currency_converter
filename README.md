@@ -18,11 +18,9 @@ Clone the repository:
 ```bash
 git clone https://github.com/yourusername/currency-converter.git
 cd currency-converter
-
+```
 ---
 
 ## Screenshot
-
 ![Currency Converter Screenshot](currency1.png)
 ![Currency Converter Screenshot](currency2.png)
-
